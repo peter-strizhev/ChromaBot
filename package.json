@@ -5,7 +5,9 @@
     "type": "commonjs",
     "scripts": {
         "test": "node src/index.js",
-        "format": "npx prettier . --write"
+        "format": "npx prettier . --write",
+        "run:prod": "NODE_ENV=prod node .",
+        "run:dev": "NODE_ENV=dev node ."
     },
     "author": "Soviet",
     "license": "ISC",

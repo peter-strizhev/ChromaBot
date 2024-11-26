@@ -8,7 +8,7 @@ const {
     SlashCommandBuilder,
 } = require("discord.js");
 
-const { token } = require("./config.json");
+const { token } = require("./config");
 
 // New client instance
 /**
