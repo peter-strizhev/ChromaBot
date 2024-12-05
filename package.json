@@ -9,7 +9,7 @@
         "run:prod": "NODE_ENV=prod node .",
         "run:dev": "NODE_ENV=dev node .",
         "update:prod": "NODE_ENV=prod node ./src/deployCommands.js",
-        "update:dev": "NODE_ENV=prod node ./src/deployCommands.js"
+        "update:dev": "NODE_ENV=dev node ./src/deployCommands.js"
     },
     "author": "Soviet",
     "license": "ISC",
