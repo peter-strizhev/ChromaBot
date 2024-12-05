@@ -64,4 +64,7 @@ for (const file of eventFiles) {
 }
 
 // Log into Discord with token
-client.login(token);
+client
+    .login(token)
+    .then(() => console.log("[info] started"))
+    .catch(() => console.error("[error] " + e));
