@@ -14,7 +14,9 @@ const { token } = require("./config");
 /**
  * @type {Client & { commands?: Collection<string, { data: SlashCommandBuilder, execute: (interaction: import("discord.js").Interaction) => Promise<void> }>}}
  */
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({
+    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers],
+});
 
 client.commands = new Collection();
 
@@ -67,4 +69,4 @@ for (const file of eventFiles) {
 client
     .login(token)
     .then(() => console.log("[info] started"))
-    .catch(() => console.error("[error] " + e));
+    .catch((e) => console.error("[error] " + e));
